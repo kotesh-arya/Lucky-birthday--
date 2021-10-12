@@ -17,8 +17,9 @@ checkButton.addEventListener("click", () => {
   const dob = dateOfBirth.value;
   const sum = calulateDateSum(dob);
   if (dob && luckyNumber) {
-    if (luckyNumber > 0) {
+    if (luckyNumber.value > 0) {
       operateValues(sum, luckyNumber.value);
+     
     } else {
      
     message.innerText = "Please enter a valid lucky number";
